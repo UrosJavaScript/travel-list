@@ -1,7 +1,15 @@
 .add-form {
   background-color: #b80000;
-  padding: 20px 0;
+  padding: 20px 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .add-form h3 {
   font-weight: 300;
@@ -12,4 +20,42 @@
     font-size: 18px;
     line-height: 25px;
   }
+}
+
+.add-form .row-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.add-form .row-wrapper select,
+.btn-add-form {
+  cursor: pointer;
+}
+
+.add-form .row-wrapper select,
+input,
+.btn-add-form {
+  border: none;
+  border-radius: 5px;
+  background: #ff9800;
+  padding: 5px;
+  color: #5f8670;
+  outline: none;
+  font-weight: 900;
+  font-size: 18px;
+}
+.add-form .row-wrapper .btn-add-form {
+  background: #5f8670;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 20px;
+  transition: color 0.6s ease-in-out, background 0.4s ease-in-out;
+}
+.add-form .row-wrapper .btn-add-form:hover {
+  background: #ff9800;
+  color: #ffffff;
+}
+.add-form .row-wrapper select option {
+  font-weight: 600;
+  color: #ffffff;
 }

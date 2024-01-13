@@ -1,13 +1,17 @@
+// helpers
+import { INITIAL_ITEMS } from "../../helpers/initialItems";
+// components
+import { ListItem } from "../listItem";
 import "./style.css";
 
 export const ListPacking = () => {
   return (
     <div className="wraper-list">
-      <div className="flex-wrapper">
-        <p>List item</p>
-        <p>List item</p>
-        <p>List item</p>
-      </div>
+      <ul className="list-item-wrapper">
+        {INITIAL_ITEMS?.map((item) => (
+          <ListItem item={item} key={item.id} />
+        ))}
+      </ul>
     </div>
   );
 };
