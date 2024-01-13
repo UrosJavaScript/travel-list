@@ -1,0 +1,14 @@
+.wraper-list {
+  background-color: #820300;
+  min-height: 60vh;
+  color: #fff;
+}
+.wraper-list .flex-wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+}

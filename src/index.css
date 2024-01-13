@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
 
 * {
   padding: 0;
@@ -9,3 +9,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* 
+** palete color **
+#5F8670
+#FF9800
+#B80000
+#820300
+*/

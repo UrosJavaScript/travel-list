@@ -1,3 +1,11 @@
+import "./style.css";
+
 export const Logo = () => {
-  return <h1>🌴 Far Away 👜</h1>;
+  return (
+    <div className="wrapper-logo">
+      <h1>
+        🌴 <span className="title">Far Away</span> 👜
+      </h1>
+    </div>
+  );
 };
