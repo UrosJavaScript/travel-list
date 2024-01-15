@@ -1,14 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 
-export const Form = () => {
+export const Form = ({ onAddItems }) => {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [items, setItems] = useState([]);
-
-  const handleAddItems = (item) => {
-    setItems(item);
-  };
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,13 +14,13 @@ export const Form = () => {
     }
 
     const newItem = { description, quantity, packed: false, id: Date.now() };
-    // console.log("newItem: ", newItem);
 
-    handleAddItems(newItem);
+    onAddItems(newItem);
 
     setDescription("");
     setQuantity(1);
   };
+
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>

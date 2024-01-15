@@ -13,3 +13,17 @@
   gap: 20px;
   list-style: none;
 }
+
+.wraper-list .list-item-wrapper .items {
+  display: flex;
+  align-items: center;
+}
+
+.wraper-list .list-item-wrapper .items .checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wraper-list .list-item-wrapper .items .btn-delete {
+  margin-left: 10px;
+  cursor: pointer;
+}
