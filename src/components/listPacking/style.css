@@ -27,3 +27,26 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+/* actions */
+.wraper-list .actions {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wraper-list .actions select {
+  border: none;
+  border-radius: 5px;
+  background: #ff9800;
+  padding: 8px;
+  color: #ffffff;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.wraper-list .actions select option {
+  font-weight: 400;
+}

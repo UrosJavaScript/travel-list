@@ -4,7 +4,6 @@ import "./style.css";
 export const Form = ({ onAddItems }) => {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
- 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +19,6 @@ export const Form = ({ onAddItems }) => {
     setDescription("");
     setQuantity(1);
   };
-
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
