@@ -12,12 +12,10 @@ export default function App() {
     setItems((items) => [...items, item]);
   };
   const handleDeleteItem = (id) => {
-    console.log("KLik DELETE");
     setItems((items) => items.filter((item) => item.id !== id));
   };
 
   const handleToggleItem = (id) => {
-    console.log("Toggle: ", id);
     setItems((items) =>
       items.map((item) =>
         item.id === id ? { ...item, packed: !item.packed } : item
@@ -34,7 +32,7 @@ export default function App() {
         onDeleteItems={handleDeleteItem}
         onToggleItems={handleToggleItem}
       />
-      <Stats />
+      <Stats items={items} />
     </div>
   );
 }
