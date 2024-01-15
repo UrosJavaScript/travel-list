@@ -1,9 +1,9 @@
-.wraper-list {
+.wrapper-list {
   background-color: #820300;
   min-height: 60vh;
   color: #fff;
 }
-.wraper-list .list-item-wrapper {
+.wrapper-list .list-item-wrapper {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -14,29 +14,35 @@
   list-style: none;
 }
 
-.wraper-list .list-item-wrapper .items {
+.wrapper-list .list-item-wrapper .items {
   display: flex;
   align-items: center;
 }
 
-.wraper-list .list-item-wrapper .items .checkbox {
+.wrapper-list .list-item-wrapper .items .checkbox {
   margin-right: 10px;
   cursor: pointer;
 }
-.wraper-list .list-item-wrapper .items .btn-delete {
+.wrapper-list .list-item-wrapper .items .btn-delete {
   margin-left: 10px;
   cursor: pointer;
 }
 
 /* actions */
-.wraper-list .actions {
+.wrapper-list .actions {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+  }
 }
 
-.wraper-list .actions select {
+.wrapper-list .actions select {
   border: none;
   border-radius: 5px;
   background: #ff9800;
@@ -49,4 +55,21 @@
 }
 .wraper-list .actions select option {
   font-weight: 400;
+}
+
+.wrapper-list .actions .btn-clear {
+  background-color: #5f8670;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px 20px;
+  transition: color 0.6s ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.wrapper-list .actions .btn-clear:hover {
+  color: #ff9800;
 }

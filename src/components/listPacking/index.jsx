@@ -4,7 +4,7 @@ import { ListItem } from "../listItem";
 // styles
 import "./style.css";
 
-export const ListPacking = ({ items, onDeleteItems, onToggleItems }) => {
+export const ListPacking = ({ items, onDeleteItems, onToggleItems, onClearList }) => {
   const [sortBy, setSortBy] = useState("input");
 
   let sortedItems;
@@ -24,8 +24,10 @@ export const ListPacking = ({ items, onDeleteItems, onToggleItems }) => {
       .sort((a, b) => Number(a.packed) - Number(b.packed));
   }
 
+
+
   return (
-    <div className="wraper-list">
+    <div className="wrapper-list">
       <ul className="list-item-wrapper">
         {sortedItems?.map((item) => (
           <ListItem
@@ -43,6 +45,9 @@ export const ListPacking = ({ items, onDeleteItems, onToggleItems }) => {
           <option value="description">Select by description order</option>
           <option value="packed">Select by packed order</option>
         </select>
+        <button className="btn-clear" onClick={onClearList}>
+          Clear list
+        </button>
       </div>
     </div>
   );
